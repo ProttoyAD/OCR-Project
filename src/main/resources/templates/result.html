@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OCR Result</title>
+  <style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		h1 {
+			font-size: 28px;
+			text-align: center;
+			margin-top: 50px;
+		}
+		p {
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		.result {
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<h1>OCR Result</h1>
+<p>The text has been extracted successfully:</p>
+<div class="result">
+  <p th:text="${result}"></p>
+</div>
+<p>OCR process has been completed!</p>
+</body>
+</html>
