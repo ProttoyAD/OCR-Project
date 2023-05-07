@@ -2,12 +2,58 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Select Image File</title>
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		form {
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+		input[type="file"] {
+			margin-bottom: 20px;
+			font-size: 16px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #f0f0f0;
+		}
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			font-size: 18px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		h1 {
+			font-size: 28px;
+			text-align: center;
+			margin-top: 50px;
+		}
+		p {
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+	</style>
 </head>
 <body>
+<h1>Welcome to OCR from Image!</h1>
+<p>Please select an image file to extract text using OCR:</p>
 <form action="/ocr" method="POST" enctype="multipart/form-data">
     <input type="file" name="file" />
     <button type="submit">Upload</button>
 </form>
-
 </body>
 </html>
